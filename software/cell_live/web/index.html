@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gift Box Packing Cell (HARDWARE)</title>
+  <link rel="icon" href="data:,">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/web/assets/fonts/atkinson-hyperlegible-next-latin-400-normal.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/web/assets/fonts/big-shoulders-display-latin-700-normal.woff2">
+  <link rel="stylesheet" href="/web/css/theme.css">
+  <link rel="stylesheet" href="/web/css/type.css">
+  <link rel="stylesheet" href="/web/css/status.css">
+  <link rel="stylesheet" href="/web/css/controls.css">
+  <link rel="stylesheet" href="/web/css/layout.css">
+  <link rel="stylesheet" href="/web/css/patchbay.css">
+  <link rel="stylesheet" href="/web/css/screens.css">
+  <link rel="stylesheet" href="/web/css/show.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <div class="brand-name">Gift Box Packing Cell</div>
+        <div class="brand-sub">HAMK Applied Robotics II</div>
+      </div>
+    </div>
+    <span class="badge-hardware" title="This console shows and controls the real cell">HARDWARE</span>
+    <span id="conn" class="conn" title="Connection to the cell_live backend">backend …</span>
+    <span id="cycle" class="cycle-pill" title="State of the real run">run unknown</span>
+    <nav id="nav" class="nav">
+      <a href="#/overview" data-route="overview">Overview</a>
+      <a href="#/run" data-route="run" data-operator>Run</a>
+      <a href="#/vision" data-route="vision">Vision</a>
+      <a href="#/logs" data-route="logs">Logs</a>
+      <a href="#/settings" data-route="settings" data-operator>Settings</a>
+      <a href="#/help" data-route="help">Help</a>
+    </nav>
+    <span id="clock" class="clock mono" title="Time on this PC">--:--:--</span>
+    <button id="theme" class="ghost" type="button" title="Switch light or dark theme">Dark</button>
+    <button id="viewer" class="ghost" type="button" title="Viewer mode hides Run and Settings in this window">Viewer</button>
+    <button id="stop" class="stop" type="button"
+            title="Software stop only. The PHYSICAL EMERGENCY STOP comes first: press it whenever someone or something is at risk.">
+      <span class="stop-word">SOFTWARE STOP</span>
+      <span class="stop-note">physical emergency stop first</span>
+    </button>
+  </header>
+  <aside id="rail" class="rail" aria-label="Component lamps"></aside>
+  <div id="lost" class="banner banner-fail hidden" role="alert">Backend connection lost: what you see is old (grey). Restart <span class="mono">python -m cell_live</span> or check this PC.</div>
+  <div id="message" class="toast hidden" role="status"></div>
+  <main id="screen" class="screen-host"></main>
+  <aside id="drawer" class="drawer hidden" aria-label="Component detail"></aside>
+  <section id="trace" class="trace on-ink collapsed" aria-label="Command and event trace"></section>
+  <script type="module" src="/web/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "camera": "usb",
+  "cameras": {
+    "usb": {
+      "camera_index": 1,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "homography_file": "homography.json",
+      "colors_file": "colors.json",
+      "lock_camera": true,
+      "lock_focus": true,
+      "lock_white_balance": false,
+      "lock_exposure": false
+    },
+    "nicla": {
+      "camera_index": "http://172.20.10.3:8080",
+      "homography_file": "homography_nicla.json",
+      "colors_file": "colors_nicla.json"
+    }
+  },
+  "display_width": 960,
+  "yolo": {
+    "model": "models/best.pt",
+    "classes": [
+      "card",
+      "candy",
+      "box",
+      "lid"
+    ],
+    "conf": 0.45,
+    "imgsz": 640
+  },
+  "box_contents": {
+    "card": 1,
+    "candy": 2
+  },
+  "require_different_colors": false,
+  "robot": {
+    "ip": "192.168.1.6",
+    "origin_on_table_mm": [
+      0,
+      0
+    ],
+    "reach_radius_mm": 400,
+    "min_radius_mm": 175,
+    "home": [
+      197.6,
+      302.4,
+      189.7,
+      -36.9
+    ],
+    "travel_z": 174.1,
+    "pick_z": 62.3,
+    "place_z": 135.6,
+    "r_angle": -117.6,
+    "box_slots": [
+      [
+        349.6,
+        38.7
+      ]
+    ],
+    "vacuum_do": 1,
+    "blow_do": 2,
+    "vacuum_on_s": 0.6,
+    "vacuum_off_s": 0.3,
+    "blow_s": 0.2,
+    "box_sensor_di": null,
+    "box_sensor_on": 1,
+    "conveyor_do": null,
+    "_note": "Taught on the real robot 17 Nov with 15_robot_setup.py (new worktable and camera stand; values from Choton's 17 Nov handover, saved by Sazzad). Use 175-370 mm from the axis (alarm 32 at 399.8 mm). DO1 = suction, DO2 = blow-off, DO3 = object belt start/stop, DO4 = direction, DO16 = enable. The box belt sensor is on the UNO, not on the robot (box_sensor_di = null).",
+    "_practice": false,
+    "arm_left_code": 0,
+    "flip_x": false,
+    "flip_y": false,
+    "pick_z_by_type": {
+      "card": 62.3,
+      "candy": 71.8
+    },
+    "straighten": true,
+    "r_sign": 1,
+    "box_angle_deg": null,
+    "belt_do": 3,
+    "belt_on": 0,
+    "belt_timeout_s": 60,
+    "belt_settle_s": 0.5,
+    "box_check": "camera",
+    "lid_pick_z": 86.3,
+    "lid_place_z": 105.1
+  }
+}

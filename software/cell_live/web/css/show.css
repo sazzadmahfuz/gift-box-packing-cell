@@ -1,0 +1,24 @@
+/* Projector view (#/show): the same parts as the other screens, larger, for reading from the back of the room. */
+body[data-screen="show"] .screen-host { padding: clamp(10px, 2.4vh, 26px) 34px 70px; }
+.show { display: grid; grid-template-columns: 1.05fr 1fr; gap: 36px; align-items: start; }
+/* The state word stays on one line. Its size follows the width of its column (the longest word,
+   "Run state unknown", is 7.7 em wide), so the list below does not jump when the state changes. */
+.show-left { container-type: inline-size; }
+.cycle.large .cycle-head { flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 14px; }
+.cycle.large .cycle-word { font-size: clamp(3rem, 12.5cqi, 8.5rem); white-space: nowrap; }
+.cycle.large { margin-bottom: clamp(8px, 2vh, 26px); }
+.cycle.large .cycle-info { font-size: clamp(1rem, 2vh, 1.25rem); }
+.cycle.large .station { padding-top: 56px; }
+.cycle.large .station strong { font-size: 1.05rem; }
+.cycle.large .station-words { display: none; }
+.cycle.large .station-time { font-size: 1.3rem; }
+/* The rows tighten on a shorter screen, so the whole component list stays above the trace bar. */
+.show-list { margin: clamp(10px, 2.6vh, 30px) 0 0; padding: 0; list-style: none; }
+.show-row { display: grid; grid-template-columns: 230px 1fr; align-items: center; gap: 16px; padding: clamp(2px, calc(2.2vh - 15px), 9px) 0; border-bottom: 1px solid var(--line); font-size: clamp(0.9375rem, 1.9vh, 1.25rem); font-weight: 600; }
+.show-state { display: flex; align-items: center; } /* as tall as its lamp: no extra text-line height */
+.show-state .status { font-size: clamp(0.875rem, 1.75vh, 1.15rem); }
+.show-right .viewfinder { min-height: clamp(240px, 42vh, 380px); }
+.show-counts { margin-top: 14px; }
+.show-counts .count-n { font-size: 3.4rem; }
+.show-counts .count-kind { font-size: 1.15rem; }
+.show-counts .ready { font-size: 1.15rem; }

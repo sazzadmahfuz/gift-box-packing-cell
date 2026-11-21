@@ -1,0 +1,57 @@
+{
+  "camera": "nicla",
+  "cameras": {
+    "usb": {
+      "camera_index": 1,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "homography_file": "homography.json",
+      "colors_file": "colors.json",
+      "lock_camera": true,
+      "lock_focus": true,
+      "lock_white_balance": false,
+      "lock_exposure": false
+    },
+    "nicla": {
+      "camera_index": "http://172.20.10.3:8080",
+      "homography_file": "homography_nicla.json",
+      "colors_file": "colors_nicla.json"
+    }
+  },
+  "display_width": 960,
+
+  "yolo": {
+    "model": "models/best.pt",
+    "classes": ["card", "candy"],
+    "conf": 0.5,
+    "imgsz": 640
+  },
+
+  "box_contents": {
+    "card": 1,
+    "candy": 2
+  },
+  "require_different_colors": true,
+
+  "robot": {
+    "ip": "192.168.1.6",
+    "origin_on_table_mm": [0, 0],
+    "reach_radius_mm": 400,
+    "min_radius_mm": 150,
+    "home": [400, 0, 200, 0],
+    "travel_z": 200,
+    "pick_z": 107,
+    "place_z": 120,
+    "r_angle": 0,
+    "box_slots": [[369, -133]],
+    "vacuum_do": 1,
+    "blow_do": 2,
+    "vacuum_on_s": 0.6,
+    "vacuum_off_s": 0.3,
+    "blow_s": 0.2,
+    "box_sensor_di": null,
+    "box_sensor_on": 1,
+    "conveyor_do": null,
+    "_note": "home/travel_z/pick_z/place_z/box_slots/vacuum_do/blow_do come from Rashmika's DobotStudio program (P1-P4, DO1 = suction, DO2 = blow-off). CHECK them on the robot. box_sensor_di = number of the robot input the box sensor is wired to (null = press ENTER instead). conveyor_do = robot output that runs the box conveyor (null = not controlled by us)."
+  }
+}

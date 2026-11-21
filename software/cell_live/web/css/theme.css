@@ -1,0 +1,137 @@
+/* Tokens for the whole console. Theme "Cabinet": a bench-grey page, a belt-ink frame (top bar and lamp rail),
+   ultramarine for actions, cyan for live things, pilot-lamp colours for status.
+   Light is the default. Dark is :root[data-theme="dark"]. Every colour lives in this file as a variable;
+   the other files use var(--name) or color-mix() on these. Status is never colour alone: each state
+   also has a lamp shape and a word (status.css, ui.js). */
+:root {
+  --bench: #e8ecf0;
+  --plate: #fafbfc;
+  --plate-2: #f0f3f6;
+  --plate-3: #e1e7ed;
+  --line: #c5ced8;
+  --line-strong: #718295;
+  --text: #0f2233;
+  --muted: #4b5d6f;
+
+  --accent: #2441d9;
+  --accent-fill: #2441d9;
+  --accent-text: #ffffff;
+  --cyan: #1fb6e8;
+
+  --ok: #11703a;
+  --ok-lamp: #1fa352;
+  --warn: #8a5200;
+  --warn-lamp: #f0a800;
+  --fail: #b3202a;
+  --fail-lamp: #e0343c;
+  --unknown: #5d6670;
+  --notobs: #4a6580;
+  --stale: #6d7782;
+
+  --frame: #151a20;
+  --frame-2: #1f262e;
+  --frame-line: #323d48;
+  --frame-text: #e8edf2;
+  --frame-muted: #9eaab6;
+  --ink: #151a20;
+  --ink-node: #1f2730;
+  --ink-line: #34414d;
+  --ink-text: #e8edf2;
+  --ink-muted: #9eaab6;
+  --ok-on-ink: #3ddc97;
+  --warn-on-ink: #ffbf3c;
+  --fail-on-ink: #ff7373;
+  --unknown-on-ink: #aab6c2;
+  --notobs-on-ink: #8fb0cf;
+  --stale-on-ink: #8a96a2;
+
+  --belt: #151a20;
+  --belt-mark: #3a4857;
+
+  --stop: #c8102e;
+  --stop-hover: #e11a3a;
+  --stop-text: #ffffff;
+  --badge: #ffc21a;
+  --badge-text: #1a1400;
+  --focus: #2441d9;
+  --shade: rgba(8, 18, 30, 0.45);
+  --shadow-pop: 0 18px 48px rgba(8, 18, 30, 0.3);
+
+  --r-1: 3px;
+  --r-2: 6px;
+  --sans: "Atkinson Hyperlegible Next", system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: "Atkinson Hyperlegible Mono", ui-monospace, "Cascadia Mono", Consolas, "Courier New", monospace;
+  --display: "Big Shoulders Display", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --topbar-h: 56px;
+  --rail-w: 58px;
+  color-scheme: light;
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+
+:root[data-theme="dark"] {
+  --bench: #0f1419;
+  --plate: #171e26;
+  --plate-2: #1e2731;
+  --plate-3: #27323e;
+  --line: #2c3845;
+  --line-strong: #6a7c90;
+  --text: #e7edf3;
+  --muted: #9fb0c0;
+
+  --accent: #7f9aff;
+  --accent-fill: #3d5bf0;
+  --cyan: #38c6f4;
+
+  --ok: #3ddc97;
+  --ok-lamp: #3ddc97;
+  --warn: #ffbf3c;
+  --warn-lamp: #ffbf3c;
+  --fail: #ff7373;
+  --fail-lamp: #ff5a5a;
+  --unknown: #9aa7b4;
+  --notobs: #8aa4bd;
+  --stale: #7d8995;
+
+  --frame: #0a0d11;
+  --frame-2: #141a21;
+  --frame-line: #232d37;
+  --ink: #0b0f13;
+  --ink-node: #151c24;
+  --ink-line: #2a3541;
+
+  --belt: #2c3845;
+  --belt-mark: #4a5a6c;
+  --focus: #7fd8ff;
+  --shade: rgba(0, 0, 0, 0.6);
+  --shadow-pop: 0 18px 48px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
+/* Status colours: --st is the text and line colour, --lamp the lit lamp. Words and shapes come with them. */
+.st-OK { --st: var(--ok); --lamp: var(--ok-lamp); }
+.st-WARN { --st: var(--warn); --lamp: var(--warn-lamp); }
+.st-FAIL { --st: var(--fail); --lamp: var(--fail-lamp); }
+.st-UNKNOWN { --st: var(--unknown); --lamp: var(--unknown); }
+.st-NOT_OBSERVABLE { --st: var(--notobs); --lamp: var(--notobs); }
+.stale { --st: var(--stale); --lamp: var(--stale); }
+/* Dark surfaces (map, camera, trace): the same states with colours that read on ink */
+.on-ink {
+  --text: var(--ink-text); --muted: var(--ink-muted); --plate: var(--ink-node); --plate-2: var(--ink); --line: var(--ink-line);
+  --ok: var(--ok-on-ink); --ok-lamp: var(--ok-on-ink); --warn: var(--warn-on-ink); --warn-lamp: var(--warn-on-ink);
+  --fail: var(--fail-on-ink); --fail-lamp: var(--fail-on-ink); --unknown: var(--unknown-on-ink); --notobs: var(--notobs-on-ink);
+  --stale: var(--stale-on-ink); --accent: var(--cyan); --line-strong: var(--ink-muted);
+  background: var(--ink); color: var(--ink-text);
+}
+
+html, body { margin: 0; background: var(--bench); color: var(--text); }
+body { font: 400 0.9375rem/1.45 var(--sans); min-width: 1100px; }
+.hidden { display: none !important; }
+.muted { color: var(--muted); }
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: var(--r-1); }
+.topbar, .rail { --focus: var(--cyan); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}

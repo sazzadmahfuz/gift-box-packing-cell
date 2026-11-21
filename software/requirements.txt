@@ -1,0 +1,15 @@
+# Python packages for software/ (cell_sim, cell_ui, cell_live). Python 3.11 or newer, 64-bit.
+# Install from the software folder:   python -m pip install -r requirements.txt
+#
+# cell_sim and the core of cell_live use the standard library only. Each package below is needed
+# only by its own adapter or check; without it that tile shows FAIL with the install command.
+# Versions: the ones tested on the demo laptop on 2026-11-16 (Python 3.13.0, Windows 11).
+
+numpy>=1.26            # robot feedback packets (port 30004); Choton's vision code. Tested 2.4.1
+opencv-python>=4.8     # USB camera, overlay, JPEG stream. Tested 5.0.0 (4.13 also worked)
+ultralytics>=8.3       # YOLO vision model (best.pt); pulls in torch (CPU build, about 1 GB). Tested 8.4.215
+pyserial>=3.5          # Arduino Nano serial port and the port scan in Settings. Tested 3.5
+pytest>=8              # the tests only. Tested 9.2.0
+
+# Optional: only for python -m cell_sim --mode robodk (RoboDK must be installed separately).
+# robodk>=5.6          # Tested 6.0.2

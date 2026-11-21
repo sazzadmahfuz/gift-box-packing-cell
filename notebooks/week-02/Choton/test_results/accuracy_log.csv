@@ -1,0 +1,130 @@
+time,condition,run,frames,frames_correct,frame_accuracy_%,stable_result_correct,max_jitter_mm,covered_objects,found,image
+2026-11-09_19-39-00,normal light,1,20,0,0.0,NO,0.19,0,cards: 1 ['red']   candies: 0 [],2026-11-09_19-39-00_run1.jpg
+2026-11-09_19-39-16,normal light,2,20,0,0.0,NO,2.78,2,"cards: 1 ['red']   candies: 2 ['blue', 'orange']",2026-11-09_19-39-16_run2.jpg
+2026-11-09_19-40-05,normal light,3,20,0,0.0,NO,0.8,1,cards: 1 ['red']   candies: 1 ['orange'],2026-11-09_19-40-05_run3.jpg
+2026-11-09_19-40-17,normal light,4,20,0,0.0,NO,1.14,1,cards: 1 ['red']   candies: 1 ['orange'],2026-11-09_19-40-17_run4.jpg
+2026-11-09_19-40-26,normal light,5,20,0,0.0,NO,0.67,0,cards: 1 ['red']   candies: 1 ['orange'],2026-11-09_19-40-26_run5.jpg
+2026-11-09_19-40-40,normal light,6,20,0,0.0,NO,5.89,1,cards: 0 []   candies: 1 ['orange'],2026-11-09_19-40-40_run6.jpg
+2026-11-09_19-40-57,normal light,7,20,0,0.0,NO,,0,cards: 0 []   candies: 0 [],2026-11-09_19-40-57_run7.jpg
+2026-11-09_19-41-21,normal light,8,20,0,0.0,NO,3.3,0,cards: 1 ['red']   candies: 0 [],2026-11-09_19-41-21_run8.jpg
+2026-11-09_19-41-43,normal light,9,20,0,0.0,NO,3.5,1,cards: 0 []   candies: 1 ['orange'],2026-11-09_19-41-43_run9.jpg
+2026-11-09_19-41-57,normal light,10,20,0,0.0,NO,6.14,0,cards: 0 []   candies: 1 ['orange'],2026-11-09_19-41-57_run10.jpg
+2026-11-09_19-45-02,dim light,1,20,19,95.0,yes,3.31,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-45-02_run1.jpg
+2026-11-09_19-45-12,dim light,2,20,20,100.0,yes,2.26,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-45-12_run2.jpg
+2026-11-09_19-45-24,dim light,3,20,18,90.0,yes,5.28,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-45-24_run3.jpg
+2026-11-09_19-45-41,dim light,4,20,20,100.0,yes,0.48,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-45-41_run4.jpg
+2026-11-09_19-45-55,dim light,5,20,20,100.0,yes,1.68,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-45-55_run5.jpg
+2026-11-09_19-46-12,dim light,6,20,20,100.0,yes,3.5,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-46-12_run6.jpg
+2026-11-09_19-46-20,dim light,7,20,20,100.0,yes,0.42,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-46-20_run7.jpg
+2026-11-09_19-46-37,dim light,8,20,17,85.0,yes,3.35,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-46-37_run8.jpg
+2026-11-09_19-46-42,dim light,9,20,12,60.0,yes,7.09,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-46-42_run9.jpg
+2026-11-09_19-46-50,dim light,10,20,20,100.0,yes,1.23,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-46-50_run10.jpg
+2026-11-09_19-49-12,side lamp,1,20,12,60.0,yes,0.15,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-49-12_run1.jpg
+2026-11-09_19-49-23,side lamp,2,20,10,50.0,yes,3.1,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-49-23_run2.jpg
+2026-11-09_19-49-46,side lamp,3,20,8,40.0,yes,0.59,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-49-46_run3.jpg
+2026-11-09_19-50-00,side lamp,4,20,13,65.0,yes,14.07,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-50-00_run4.jpg
+2026-11-09_19-50-14,side lamp,5,20,12,60.0,yes,7.21,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-50-14_run5.jpg
+2026-11-09_19-50-28,side lamp,6,20,20,100.0,yes,0.99,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-50-28_run6.jpg
+2026-11-09_19-50-45,side lamp,7,20,15,75.0,yes,0.12,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-50-45_run7.jpg
+2026-11-09_19-51-02,side lamp,8,20,14,70.0,yes,1.9,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-51-02_run8.jpg
+2026-11-09_19-51-19,side lamp,9,20,16,80.0,yes,0.66,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-51-19_run9.jpg
+2026-11-09_19-51-30,side lamp,10,20,20,100.0,yes,1.09,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-51-30_run10.jpg
+2026-11-09_19-54-27,touching,1,20,20,100.0,yes,0.25,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-54-27_run1.jpg
+2026-11-09_19-54-36,touching,2,20,20,100.0,yes,0.36,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-54-36_run2.jpg
+2026-11-09_19-54-42,touching,3,20,17,85.0,yes,1.83,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-54-42_run3.jpg
+2026-11-09_19-54-52,touching,4,20,10,50.0,NO,14.4,1,"cards: 2 ['green', 'red']   candies: 1 ['blue']",2026-11-09_19-54-52_run4.jpg
+2026-11-09_19-55-00,touching,5,20,20,100.0,yes,0.18,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-55-00_run5.jpg
+2026-11-09_19-55-11,touching,6,20,0,0.0,NO,0.61,1,"cards: 1 ['green']   candies: 2 ['blue', 'orange']",2026-11-09_19-55-11_run6.jpg
+2026-11-09_19-55-22,touching,7,20,18,90.0,yes,1.75,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-55-22_run7.jpg
+2026-11-09_19-55-38,touching,8,20,13,65.0,yes,19.41,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-55-38_run8.jpg
+2026-11-09_19-55-53,touching,9,20,20,100.0,yes,0.41,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-55-53_run9.jpg
+2026-11-09_19-55-57,touching,10,20,20,100.0,yes,0.31,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-55-57_run10.jpg
+2026-11-09_19-56-08,touching,11,20,20,100.0,yes,0.47,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-56-08_run11.jpg
+2026-11-09_19-56-27,touching,12,20,20,100.0,yes,0.33,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-56-27_run12.jpg
+2026-11-09_19-58-54,overlap,1,20,20,100.0,yes,0.17,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-58-54_run1.jpg
+2026-11-09_19-59-00,overlap,2,20,20,100.0,yes,0.2,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-59-00_run2.jpg
+2026-11-09_19-59-09,overlap,3,20,8,40.0,NO,1.7,1,"cards: 1 ['red']   candies: 2 ['blue', 'orange']",2026-11-09_19-59-09_run3.jpg
+2026-11-09_19-59-16,overlap,4,20,20,100.0,yes,0.22,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-59-16_run4.jpg
+2026-11-09_19-59-28,overlap,5,20,20,100.0,yes,0.4,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-59-28_run5.jpg
+2026-11-09_19-59-39,overlap,6,20,20,100.0,yes,0.29,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-59-39_run6.jpg
+2026-11-09_19-59-48,overlap,7,20,20,100.0,yes,0.25,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_19-59-48_run7.jpg
+2026-11-09_20-00-01,overlap,8,20,20,100.0,yes,0.51,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-00-01_run8.jpg
+2026-11-09_20-00-09,overlap,9,20,20,100.0,yes,0.51,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-00-09_run9.jpg
+2026-11-09_20-00-23,overlap,10,20,11,55.0,NO,0.18,1,"cards: 1 ['red']   candies: 2 ['blue', 'orange']",2026-11-09_20-00-23_run10.jpg
+2026-11-09_20-00-33,overlap,11,20,20,100.0,yes,0.48,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-00-33_run11.jpg
+2026-11-09_20-01-26,distractor,1,20,20,100.0,yes,0.62,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-01-26_run1.jpg
+2026-11-09_20-01-34,distractor,2,20,20,100.0,yes,0.46,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-01-34_run2.jpg
+2026-11-09_20-01-44,distractor,3,20,20,100.0,yes,0.4,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-01-44_run3.jpg
+2026-11-09_20-01-51,distractor,4,20,20,100.0,yes,0.47,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-01-51_run4.jpg
+2026-11-09_20-02-03,distractor,5,20,0,0.0,NO,0.79,2,"cards: 2 ['green', 'red']   candies: 3 ['blue', 'orange', 'orange']",2026-11-09_20-02-03_run5.jpg
+2026-11-09_20-02-15,distractor,6,20,0,0.0,NO,1.05,2,"cards: 2 ['green', 'red']   candies: 3 ['blue', 'orange', 'orange']",2026-11-09_20-02-15_run6.jpg
+2026-11-09_20-02-20,distractor,7,20,0,0.0,NO,0.95,2,"cards: 2 ['green', 'red']   candies: 3 ['blue', 'orange', 'orange']",2026-11-09_20-02-20_run7.jpg
+2026-11-09_20-02-24,distractor,8,20,0,0.0,NO,1.12,2,"cards: 2 ['green', 'red']   candies: 3 ['blue', 'orange', 'orange']",2026-11-09_20-02-24_run8.jpg
+2026-11-09_20-02-34,distractor,9,20,0,0.0,NO,1.08,2,"cards: 2 ['green', 'red']   candies: 3 ['blue', 'orange', 'orange']",2026-11-09_20-02-34_run9.jpg
+2026-11-09_20-02-42,distractor,10,20,0,0.0,NO,2.12,3,"cards: 2 ['green', 'red']   candies: 4 ['blue', 'green', 'orange', 'orange']",2026-11-09_20-02-42_run10.jpg
+2026-11-09_20-02-47,distractor,11,20,0,0.0,NO,1.08,2,"cards: 2 ['green', 'red']   candies: 3 ['blue', 'orange', 'orange']",2026-11-09_20-02-47_run11.jpg
+2026-11-09_20-03-02,distractor,12,20,0,0.0,NO,0.99,3,"cards: 3 ['green', 'orange', 'red']   candies: 3 ['blue', 'orange', 'orange']",2026-11-09_20-03-02_run12.jpg
+2026-11-09_20-03-10,distractor,13,20,0,0.0,NO,1.25,2,"cards: 2 ['green', 'red']   candies: 3 ['blue', 'orange', 'orange']",2026-11-09_20-03-10_run13.jpg
+2026-11-09_20-16-59,bright light,1,20,20,100.0,yes,0.37,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-16-59_run1.jpg
+2026-11-09_20-17-06,bright light,2,20,20,100.0,yes,0.69,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-17-06_run2.jpg
+2026-11-09_20-17-20,bright light,3,20,0,0.0,NO,1.9,0,"cards: 1 ['green']   candies: 2 ['blue', 'orange']",2026-11-09_20-17-20_run3.jpg
+2026-11-09_20-17-27,bright light,4,20,0,0.0,NO,0.23,0,"cards: 1 ['green']   candies: 2 ['blue', 'orange']",2026-11-09_20-17-27_run4.jpg
+2026-11-09_20-17-37,bright light,5,20,15,75.0,yes,4.48,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-17-37_run5.jpg
+2026-11-09_20-17-44,bright light,6,20,1,5.0,NO,2.82,0,"cards: 1 ['green']   candies: 2 ['blue', 'orange']",2026-11-09_20-17-44_run6.jpg
+2026-11-09_20-17-51,bright light,7,20,12,60.0,yes,6.98,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-17-51_run7.jpg
+2026-11-09_20-17-58,bright light,8,20,11,55.0,NO,8.68,0,"cards: 0 []   candies: 2 ['blue', 'orange']",2026-11-09_20-17-58_run8.jpg
+2026-11-09_20-18-06,bright light,9,20,12,60.0,yes,10.5,2,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 2",2026-11-09_20-18-06_run9.jpg
+2026-11-09_20-18-10,bright light,10,20,0,0.0,NO,9.47,1,"cards: 1 ['green']   candies: 2 ['blue', 'orange']   at edge: 2",2026-11-09_20-18-10_run10.jpg
+2026-11-09_20-18-20,bright light,11,20,0,0.0,NO,1.05,2,"cards: 1 ['green']   candies: 2 ['blue', 'orange']   ignored: 1   at edge: 2",2026-11-09_20-18-20_run11.jpg
+2026-11-09_20-18-31,bright light,12,20,20,100.0,yes,0.2,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-18-31_run12.jpg
+2026-11-09_20-18-39,bright light,13,20,20,100.0,yes,4.67,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 1",2026-11-09_20-18-39_run13.jpg
+2026-11-09_20-18-45,bright light,14,20,20,100.0,yes,1.05,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 1",2026-11-09_20-18-45_run14.jpg
+2026-11-09_20-19-39,distractor v2,1,20,18,90.0,yes,2.37,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 1",2026-11-09_20-19-39_run1.jpg
+2026-11-09_20-19-46,distractor v2,2,20,20,100.0,yes,0.08,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-19-46_run2.jpg
+2026-11-09_20-19-53,distractor v2,3,20,0,0.0,NO,3.34,2,"cards: 2 ['green', 'red']   candies: 3 ['blue', 'orange', 'orange']   at edge: 1",2026-11-09_20-19-53_run3.jpg
+2026-11-09_20-20-08,distractor v2,4,20,0,0.0,NO,1.04,1,"cards: 1 ['green']   candies: 3 ['blue', 'green', 'orange']   at edge: 2",2026-11-09_20-20-08_run4.jpg
+2026-11-09_20-20-12,distractor v2,5,20,0,0.0,NO,4.33,1,"cards: 1 ['green']   candies: 3 ['blue', 'green', 'orange']   at edge: 2",2026-11-09_20-20-12_run5.jpg
+2026-11-09_20-20-29,distractor v2,6,20,0,0.0,NO,0.77,2,"cards: 3 ['green', 'green', 'red']   candies: 3 ['blue', 'green', 'orange']   at edge: 3",2026-11-09_20-20-29_run6.jpg
+2026-11-09_20-20-49,distractor v2,7,20,0,0.0,NO,0.44,1,"cards: 1 ['red']   candies: 3 ['blue', 'green', 'orange']   at edge: 3",2026-11-09_20-20-49_run7.jpg
+2026-11-09_20-20-57,distractor v2,8,20,1,5.0,NO,0.9,3,"cards: 2 ['green', 'red']   candies: 3 ['blue', 'green', 'orange']   at edge: 4",2026-11-09_20-20-57_run8.jpg
+2026-11-09_20-21-08,distractor v2,9,20,0,0.0,NO,3.12,2,"cards: 3 ['green', 'green', 'red']   candies: 2 ['blue', 'orange']   at edge: 4",2026-11-09_20-21-08_run9.jpg
+2026-11-09_20-26-35,bright light v2,1,20,0,0.0,NO,1.11,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 1",2026-11-09_20-26-35_run1.jpg
+2026-11-09_20-26-43,bright light v2,2,20,1,5.0,NO,15.96,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 2",2026-11-09_20-26-43_run2.jpg
+2026-11-09_20-26-50,bright light v2,3,20,20,100.0,yes,0.32,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-26-50_run3.jpg
+2026-11-09_20-26-58,bright light v2,4,20,20,100.0,yes,0.84,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-26-58_run4.jpg
+2026-11-09_20-27-05,bright light v2,5,20,20,100.0,yes,0.86,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-27-05_run5.jpg
+2026-11-09_20-27-17,bright light v2,6,20,19,95.0,yes,4.32,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-27-17_run6.jpg
+2026-11-09_20-27-27,bright light v2,7,20,20,100.0,yes,0.23,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-27-27_run7.jpg
+2026-11-09_20-27-36,bright light v2,8,20,0,0.0,NO,0.29,1,"cards: 1 ['green']   candies: 2 ['blue', 'orange']   ignored: 1   at edge: 4",2026-11-09_20-27-36_run8.jpg
+2026-11-09_20-27-48,bright light v2,9,20,0,0.0,NO,0.05,0,"cards: 1 ['red']   candies: 2 ['blue', 'orange']   at edge: 2",2026-11-09_20-27-48_run9.jpg
+2026-11-09_20-27-58,bright light v2,10,20,0,0.0,NO,0.27,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 1",2026-11-09_20-27-58_run10.jpg
+2026-11-09_20-28-58,distractor v3,1,20,0,0.0,NO,0.62,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   ignored: 1   at edge: 1",2026-11-09_20-28-58_run1.jpg
+2026-11-09_20-29-07,distractor v3,2,20,0,0.0,NO,2.22,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   ignored: 1   at edge: 3",2026-11-09_20-29-07_run2.jpg
+2026-11-09_20-29-17,distractor v3,3,20,0,0.0,NO,0.46,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 2",2026-11-09_20-29-17_run3.jpg
+2026-11-09_20-29-22,distractor v3,4,20,0,0.0,NO,2.42,0,cards: 1 ['red']   candies: 1 ['orange']   at edge: 1,2026-11-09_20-29-22_run4.jpg
+2026-11-09_20-29-26,distractor v3,5,20,0,0.0,NO,0.15,0,"cards: 1 ['red']   candies: 2 ['blue', 'orange']   at edge: 1",2026-11-09_20-29-26_run5.jpg
+2026-11-09_20-29-35,distractor v3,6,20,0,0.0,NO,0.17,0,"cards: 1 ['green']   candies: 2 ['blue', 'orange']   at edge: 1",2026-11-09_20-29-35_run6.jpg
+2026-11-09_20-29-53,distractor v3,7,20,0,0.0,NO,0.17,0,"cards: 1 ['green']   candies: 2 ['blue', 'orange']   at edge: 1",2026-11-09_20-29-53_run7.jpg
+2026-11-09_20-35-02,bright light v3,1,20,20,100.0,yes,0.17,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-35-02_run1.jpg
+2026-11-09_20-35-11,bright light v3,2,20,20,100.0,yes,0.25,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-35-11_run2.jpg
+2026-11-09_20-35-18,bright light v3,3,20,20,100.0,yes,0.25,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-35-18_run3.jpg
+2026-11-09_20-35-29,bright light v3,4,20,20,100.0,yes,0.22,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-35-29_run4.jpg
+2026-11-09_20-35-38,bright light v3,5,20,20,100.0,yes,0.2,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-35-38_run5.jpg
+2026-11-09_20-35-44,bright light v3,6,20,20,100.0,yes,0.12,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-35-44_run6.jpg
+2026-11-09_20-35-56,bright light v3,7,20,0,0.0,NO,0.45,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 1",2026-11-09_20-35-56_run7.jpg
+2026-11-09_20-36-06,bright light v3,8,20,0,0.0,NO,0.31,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 3",2026-11-09_20-36-06_run8.jpg
+2026-11-09_20-36-16,bright light v3,9,20,0,0.0,NO,0.24,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   at edge: 2",2026-11-09_20-36-16_run9.jpg
+2026-11-09_20-36-26,bright light v3,10,20,20,100.0,yes,0.33,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-36-26_run10.jpg
+2026-11-09_20-36-37,bright light v3,11,20,20,100.0,yes,0.09,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-36-37_run11.jpg
+2026-11-09_20-37-23,distractor v4,1,20,20,100.0,yes,0.09,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   ignored: 1",2026-11-09_20-37-23_run1.jpg
+2026-11-09_20-37-34,distractor v4,2,20,20,100.0,yes,0.64,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   ignored: 1",2026-11-09_20-37-34_run2.jpg
+2026-11-09_20-37-44,distractor v4,3,20,20,100.0,yes,0.93,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-37-44_run3.jpg
+2026-11-09_20-37-52,distractor v4,4,20,20,100.0,yes,1.11,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']   ignored: 1",2026-11-09_20-37-52_run4.jpg
+2026-11-09_20-38-13,distractor v4,5,20,18,90.0,yes,0.17,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-38-13_run5.jpg
+2026-11-09_20-38-25,distractor v4,6,20,15,75.0,yes,0.04,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-38-25_run6.jpg
+2026-11-09_20-38-33,distractor v4,7,20,1,5.0,NO,1.42,2,"cards: 3 ['green', 'green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-38-33_run7.jpg
+2026-11-09_20-38-43,distractor v4,8,20,17,85.0,yes,0.77,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-38-43_run8.jpg
+2026-11-09_20-38-54,distractor v4,9,20,14,70.0,yes,1.93,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-38-54_run9.jpg
+2026-11-09_20-38-59,distractor v4,10,20,10,50.0,yes,0.49,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-38-59_run10.jpg
+2026-11-09_20-39-07,distractor v4,11,20,20,100.0,yes,0.15,1,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-39-07_run11.jpg
+2026-11-09_20-39-13,distractor v4,12,20,13,65.0,yes,0.11,0,"cards: 2 ['green', 'red']   candies: 2 ['blue', 'orange']",2026-11-09_20-39-13_run12.jpg

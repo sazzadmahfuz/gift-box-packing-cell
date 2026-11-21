@@ -1,0 +1,12 @@
+model train_2026-11-11_03-34-50  base yolo11n.pt  epochs 50  imgsz 640
+train 102  val 17  test 0
+val  : precision 0.97  recall 1.00  mAP50 0.99  mAP50-95 0.83
+
+model train_2026-11-12_12-40-59  base yolo11n.pt  epochs 50  imgsz 640
+train 117  val 22  test 0
+val  : precision 0.97  recall 0.90  mAP50 0.98  mAP50-95 0.85
+
+model train_2026-11-14_18-24-41  base yolo11n.pt  epochs 50  imgsz 640
+train 147  val 22  test 0
+val  : precision 0.99  recall 1.00  mAP50 0.99  mAP50-95 0.89
+

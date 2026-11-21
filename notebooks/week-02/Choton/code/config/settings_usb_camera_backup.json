@@ -1,0 +1,73 @@
+{
+  "camera_index": 1,
+  "colors_file": "colors.json",
+  "homography_file": "homography.json",
+  "frame_width": 1280,
+  "frame_height": 720,
+  "reference_size": [
+    1280,
+    720
+  ],
+  "roi": null,
+  "blur": 5,
+  "morph_kernel": 5,
+  "close_kernel": 7,
+  "min_object_area": 8000,
+  "candy_min_aspect": 2.5,
+  "card_min_area": 15000,
+  "merge_gap": 30,
+  "lock_camera": true,
+  "lock_focus": true,
+  "lock_white_balance": false,
+  "lock_exposure": false,
+  "sizes_mm": {
+    "card": [
+      125,
+      87
+    ],
+    "candy": [
+      150,
+      28
+    ]
+  },
+  "size_tolerance": 0.25,
+  "boxes": 1,
+  "box_contents": {
+    "card": 2,
+    "candy": 2
+  },
+  "robot": {
+    "origin_on_table_mm": [
+      100,
+      75
+    ],
+    "flip_x": false,
+    "flip_y": false,
+    "reach_radius_mm": 180,
+    "home_z": 139,
+    "travel_z": 60,
+    "pick_z": 40,
+    "place_z": 40,
+    "fast_vel": 300,
+    "slow_vel": 120,
+    "vacuum_output": "DOut21",
+    "box_slots": [
+      [
+        80,
+        -45
+      ],
+      [
+        80,
+        -15
+      ],
+      [
+        80,
+        15
+      ],
+      [
+        80,
+        45
+      ]
+    ]
+  }
+}

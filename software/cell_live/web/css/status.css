@@ -1,0 +1,41 @@
+/* Status lamps. One lamp per state, each with its own shape, plus the word next to it (ui.js badge()).
+   OK disc, WARN triangle, FAIL cross, UNKNOWN open ring with a dot, NOT OBSERVABLE slashed ring,
+   stale (old data) dashed ring. The lamp is drawn here, so no icon font is needed. */
+.lamp { --size: 14px; --edge: var(--st, var(--lamp, var(--unknown)));
+  --outline: drop-shadow(0.7px 0 0 var(--edge)) drop-shadow(-0.7px 0 0 var(--edge)) drop-shadow(0 0.7px 0 var(--edge)) drop-shadow(0 -0.7px 0 var(--edge));
+  position: relative; display: inline-block; flex: none; width: var(--size); height: var(--size); border-radius: 50%; vertical-align: -2px; }
+.lamp::before, .lamp::after { content: ""; position: absolute; box-sizing: border-box; }
+.lamp::before { inset: 0; background: var(--lamp, var(--unknown)); }
+.lamp[data-state="OK"]::before { border-radius: 50%; box-shadow: 0 0 0 1.5px var(--edge), 0 0 0 4px color-mix(in srgb, var(--lamp) 25%, transparent), 0 0 9px color-mix(in srgb, var(--lamp) 55%, transparent); }
+.lamp[data-state="WARN"]::before { clip-path: polygon(50% 0, 100% 92%, 0 92%); }
+.lamp[data-state="WARN"] { filter: var(--outline) drop-shadow(0 0 4px color-mix(in srgb, var(--lamp) 60%, transparent)); }
+.lamp[data-state="FAIL"]::before { clip-path: polygon(14% 0, 50% 36%, 86% 0, 100% 14%, 64% 50%, 100% 86%, 86% 100%, 50% 64%, 14% 100%, 0 86%, 36% 50%, 0 14%); }
+.lamp[data-state="FAIL"] { filter: var(--outline) drop-shadow(0 0 4px color-mix(in srgb, var(--lamp) 60%, transparent)); }
+.lamp[data-state="UNKNOWN"]::before { background: none; border: 2px solid var(--lamp); border-radius: 50%; }
+.lamp[data-state="UNKNOWN"]::after { left: 38%; top: 38%; width: 24%; height: 24%; background: var(--lamp); border-radius: 50%; }
+.lamp[data-state="NOT_OBSERVABLE"]::before { background: none; border: 2px solid var(--lamp); border-radius: 50%; }
+.lamp[data-state="NOT_OBSERVABLE"]::after { left: 8%; right: 8%; top: calc(50% - 1px); height: 2px; background: var(--lamp); transform: rotate(-45deg); }
+.lamp.old::before { background: none; border: 2px dashed var(--stale); border-radius: 50%; clip-path: none; box-shadow: none; }
+.lamp.old::after { display: none; }
+.lamp.old { filter: none; }
+.lamp.big { --size: 22px; }
+.lamp.huge { --size: 30px; }
+@keyframes ring { from { box-shadow: 0 0 0 0 color-mix(in srgb, var(--lamp) 70%, transparent); } to { box-shadow: 0 0 0 14px transparent; } }
+.lamp.changed { animation: ring 0.9s ease-out 1; }
+
+.status { display: inline-flex; align-items: center; gap: 7px; font-weight: 800; color: var(--st, var(--unknown)); white-space: nowrap; }
+.stale-note { color: var(--stale); font-weight: 800; font-size: 0.78rem; }
+
+/* Small chips: file or hardware, config status */
+.tag { display: inline-block; padding: 0 6px; border: 1px solid var(--line-strong); border-radius: var(--r-1); color: var(--muted); font-size: 0.72rem; font-weight: 600; line-height: 1.5; vertical-align: 1px; }
+.chip { display: inline-block; padding: 1px 8px; border-radius: var(--r-1); font-size: 0.75rem; font-weight: 800; background: var(--plate-3); color: var(--text); }
+.chip-confirm { background: var(--badge); color: var(--badge-text); }
+.chip-verified { background: color-mix(in srgb, var(--ok-lamp) 22%, var(--plate)); color: var(--ok); }
+
+/* Bars drawn from real numbers (latency history since this page opened) */
+.spark { display: inline-flex; align-items: flex-end; gap: 1px; width: 62px; height: 16px; vertical-align: middle; }
+.spark i { flex: 1; min-width: 1px; height: calc(var(--v, 4) * 1%); background: var(--line-strong); border-radius: 1px 1px 0 0; }
+.spark i:last-child { background: var(--accent); }
+
+.result-ok { color: var(--ok); font-weight: 800; }
+.result-fail { color: var(--fail); font-weight: 800; }

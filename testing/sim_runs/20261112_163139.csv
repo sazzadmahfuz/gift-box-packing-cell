@@ -1,0 +1,12 @@
+# SIMULATION, assumed parameters; DOBOT DRY RUN: TCP command strings printed, nothing sent; parameters: config.json (all ASSUMED) for all times; hardware.json dobot section for the command values (targets and vacuum DO ASSUMED); devices: DobotTcpRobot (dry), SimBelt A, SimBelt B, SimSensor S1, MockVision
+record_type,cycle,item_index,item_type,items,belt_a_on_s,detected_s,at_pick_s,pick_start_s,pick_done_s,place_done_s,item_time_s,cycle_start_s,box_at_s1_s,release_start_s,box_cleared_s,cycle_done_s,cycle_time_s,skipped_count,note
+item,1,1,candy_A,,0.000,3.500,5.000,5.000,7.000,16.000,16.000,,,,,,,,
+skipped,1,,card,,,19.500,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+skipped,1,,candy_A,,,22.500,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+item,1,2,candy_B,,16.000,25.500,27.000,27.000,29.000,33.000,17.000,,,,,,,,
+skipped,1,,candy_A,,,36.500,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+skipped,1,,candy_B,,,39.500,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+skipped,1,,candy_B,,,42.500,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+skipped,1,,candy_B,,,45.500,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+item,1,3,card,,33.000,48.500,50.000,50.000,52.000,56.000,23.000,,,,,,,,
+cycle,1,,,candy_A|candy_B|card,,,,,,,,0.000,12.000,56.000,57.875,57.875,57.875,6,

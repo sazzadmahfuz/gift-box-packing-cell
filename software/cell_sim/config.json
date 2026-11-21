@@ -1,0 +1,91 @@
+{
+  "_comment": "SIMULATION, assumed parameters. Every time and distance below is a placeholder. Replace it with a measured value and change its note. Cycle as in notebooks/week-03/Choton/Choton_Week3_Notebook.md (team-confirmed 2026-11-16).",
+  "items_per_box": {
+    "value": ["card", "candy", "candy"],
+    "unit": "item types, in placing order",
+    "note": "SETTING: team decision 1 card + 2 candies (Choton_Week3_Notebook.md, Information for the Team; confirmed 2026-11-16); order card, candy, candy as in Choton's program. Not a measurement"
+  },
+  "random_seed": {
+    "value": 1,
+    "unit": "integer",
+    "note": "SETTING: not a measurement; fixed so that the random item order on belt A repeats between runs"
+  },
+  "belt_a_speed_mm_s": {
+    "value": 50.0,
+    "unit": "mm/s",
+    "note": "ASSUMED: object conveyor (belt A) speed not measured yet"
+  },
+  "item_spacing_mm": {
+    "value": 70.0,
+    "unit": "mm",
+    "note": "ASSUMED: distance between items placed on belt A; feeding by hand, not measured; a full set (3 items) must stay in the pick area while the camera confirms it"
+  },
+  "pick_area_length_mm": {
+    "value": 230.0,
+    "unit": "mm along belt A",
+    "note": "ASSUMED: length of the camera's pick area; the 5 calibration crosses span about 236 mm in robot Y (Choton code/config/homography.json), belt direction not confirmed"
+  },
+  "set_confirm_time_s": {
+    "value": 1.0,
+    "unit": "s",
+    "note": "ASSUMED: the program needs the full set in 3 pictures in a row before it stops belt A (Choton); frame time not measured"
+  },
+  "detection_time_s": {
+    "value": 0.5,
+    "unit": "s",
+    "note": "ASSUMED: time for the camera to see that the open box stands still; not measured"
+  },
+  "pictures_time_s": {
+    "value": 3.0,
+    "unit": "s",
+    "note": "ASSUMED: robot moves home out of the camera view and takes 8 pictures (Choton); not timed"
+  },
+  "pick_time_s": {
+    "value": 2.0,
+    "unit": "s",
+    "note": "ASSUMED: above the object, down, suction on (0.6 s wait), up; not timed as a whole"
+  },
+  "move_to_box_time_s": {
+    "value": 2.5,
+    "unit": "s",
+    "note": "ASSUMED: M1 Pro move pick area -> box not timed yet; also used for the return move and the move home"
+  },
+  "place_time_s": {
+    "value": 1.5,
+    "unit": "s",
+    "note": "ASSUMED: down into the box, suction off, blow-off 0.2 s, wait 0.3 s, up; not timed as a whole"
+  },
+  "lid_time_s": {
+    "value": 8.0,
+    "unit": "s",
+    "note": "ASSUMED: pick the lid, carry it over the box edge, put it on (Choton's code); not yet tried on the real robot"
+  },
+  "belt_b_speed_mm_s": {
+    "value": 80.0,
+    "unit": "mm/s",
+    "note": "ASSUMED: box conveyor (belt B, run by the Arduino Nano) speed not measured yet"
+  },
+  "box_start_to_s1_mm": {
+    "value": 400.0,
+    "unit": "mm",
+    "note": "ASSUMED: distance a new box travels on belt B to the Nano's box sensor; not measured"
+  },
+  "box_removal_time_s": {
+    "value": 10.0,
+    "unit": "s",
+    "note": "ASSUMED: the operator takes the closed box away (team decision 2026-11-16); time not measured"
+  },
+  "timeouts_s": {
+    "value": {
+      "WAIT_BOX": 30.0,
+      "FEED_SET": 120.0,
+      "DETECT": 15.0,
+      "PICK": 10.0,
+      "PLACE": 15.0,
+      "CLOSE_LID": 30.0,
+      "RELEASE_BOX": 120.0
+    },
+    "unit": "s",
+    "note": "ASSUMED: generous margins over the assumed nominal times; FEED_SET is long because unneeded items pass by (Choton's program stops belt A after 60 s without objects)"
+  }
+}

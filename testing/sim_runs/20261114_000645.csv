@@ -1,0 +1,12 @@
+# ROBODK SIMULATION, assumed parameters; parameters: config.json (all ASSUMED) for belts, S1, vision and timeouts; robot motion times measured in RoboDK at simulation speed 1; hardware.json robodk section; devices: RoboDKRobot (Dobot M1), SimBelt A, SimBelt B, SimSensor S1, MockVision
+record_type,cycle,item_index,item_type,items,belt_a_on_s,detected_s,at_pick_s,pick_start_s,pick_done_s,place_done_s,item_time_s,cycle_start_s,box_at_s1_s,release_start_s,box_cleared_s,cycle_done_s,cycle_time_s,skipped_count,note
+item,1,1,candy_A,,0.000,3.500,5.000,5.000,8.222,16.996,16.996,,,,,,,,
+skipped,1,,card,,,20.496,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+skipped,1,,candy_A,,,23.496,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+item,1,2,candy_B,,16.996,26.496,27.996,27.996,29.810,33.586,16.590,,,,,,,,
+skipped,1,,candy_A,,,37.086,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+skipped,1,,candy_B,,,40.086,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+skipped,1,,candy_B,,,43.086,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+skipped,1,,candy_B,,,46.086,,,,,,,,,,,,,not the next needed item; passed to end of belt A
+item,1,3,card,,33.586,49.086,50.586,50.586,52.400,56.172,22.586,,,,,,,,
+cycle,1,,,candy_A|candy_B|card,,,,,,,,0.000,13.222,56.172,58.047,58.047,58.047,6,

@@ -1,0 +1,4 @@
+# HARDWARE RUN; speed 40 %; boxes requested 1; teacher approval: Leo, 2026-11-17.; sha256 live_config=669bfa5d56b2d78a, settings=f95fc1ebd9ae7314, homography=ad12261de99044dd
+time_s,box,state,event,command,reply,detections,fault
+0.101,0,,port 29999,ClearError(),"0,{},ClearError();",,
+0.602,0,IDLE,start refused,,,,the robot did not start: ControlConnectionLost: the robot closed port 29999 during EnableRobot()

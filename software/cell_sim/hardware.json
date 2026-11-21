@@ -1,0 +1,217 @@
+{
+  "_comment": "Hardware and RoboDK settings. Every entry has value, unit, source and status (VERIFIED, FROM PHOTO, ASSUMED, CONFIRM, or SETTING for a choice we made). Unknown values are null.",
+  "robodk": {
+    "host": {
+      "value": "localhost",
+      "unit": "hostname",
+      "source": "RoboDK runs on this PC",
+      "status": "SETTING"
+    },
+    "port": {
+      "value": 20500,
+      "unit": "TCP port",
+      "source": "robodk 6.0.2, robodk/robolink.py Robolink.PORT_START",
+      "status": "VERIFIED"
+    },
+    "robot_name": {
+      "value": "Dobot M1",
+      "unit": "item name in the RoboDK station tree; null = use the one robot whose name contains a keyword below",
+      "source": "Exact robot name confirmed from RoboDK station screenshot (screenshot file name: CONFIRM); same name read from the open station with the RoboDK API ItemList(ITEM_TYPE_ROBOT) on 2026-11-12. RoboDK model of the older Dobot M1, not the M1 Pro (joint limits differ)",
+      "status": "FROM PHOTO"
+    },
+    "robot_name_keywords": {
+      "value": ["M1 Pro", "M1Pro", "MG400"],
+      "unit": "text in the robot name",
+      "source": "robodk.com/doc/en/Robots-Dobot.html: the MG400 driver and post processor cover MG400 and M1 Pro; the M1 Pro library name is not verified (library page 404)",
+      "status": "SETTING"
+    },
+    "target_names": {
+      "value": {"home": "home", "pick": "pick", "pick_approach": "pick_approach", "place_box": "place_box", "place_approach": "place_approach"},
+      "unit": "target item names in the RoboDK station; home, pick, place_box required; pick_approach and place_approach optional (taught approach points replace approach_dz_mm)",
+      "source": "Cell simulation and RoboDK station targets",
+      "status": "SETTING"
+    },
+    "approach_dz_mm": {
+      "value": 50.0,
+      "unit": "mm above pick and place_box",
+      "source": "ASSUMED for the RoboDK view only; the real clearance must come from the cell layout",
+      "status": "ASSUMED"
+    },
+    "simulation_speed": {
+      "value": 1.0,
+      "unit": "RoboDK simulation speed ratio (1 = real time)",
+      "source": "chosen so that measured wall time equals the simulated motion time",
+      "status": "SETTING"
+    },
+    "attach_object_keyword": {
+      "value": "item",
+      "unit": "text in the object name; null = no attach/detach",
+      "source": "station set-up in software/cell_sim/README.md",
+      "status": "SETTING"
+    },
+    "attach_tolerance_mm": {
+      "value": -1,
+      "unit": "mm; -1 = RoboDK default",
+      "source": "robodk 6.0.2 Item.AttachClosest(keyword='', tolerance_mm=-1, ...)",
+      "status": "SETTING"
+    }
+  },
+  "dobot": {
+    "api_path": {
+      "value": "../third_party/dobot_api/dobot_api.py",
+      "unit": "file path, relative to software/cell_sim/",
+      "source": "unmodified vendor copy, see software/third_party/dobot_api/README.md",
+      "status": "SETTING"
+    },
+    "robot_ip": {
+      "value": "192.168.1.6",
+      "unit": "IPv4 address (Ethernet 1 / LAN1)",
+      "source": "notebooks/week-02/Rashmika/Readme.md (ping OK); notebooks/week-02/Rashmika/Images/day1/Image4.png, Image7.jpg",
+      "status": "VERIFIED"
+    },
+    "dashboard_port": {
+      "value": 29999,
+      "unit": "TCP port",
+      "source": "software/third_party/dobot_api/dobot_api.py DobotApi.__init__ (accepted ports)",
+      "status": "VERIFIED"
+    },
+    "move_port": {
+      "value": 30003,
+      "unit": "TCP port",
+      "source": "software/third_party/dobot_api/dobot_api.py DobotApi.__init__ (accepted ports)",
+      "status": "VERIFIED"
+    },
+    "feedback_port": {
+      "value": 30004,
+      "unit": "TCP port, 1440-byte feedback packets",
+      "source": "software/third_party/dobot_api/dobot_api.py DobotApi.__init__; TCP-IP-4Axis-Python-main/main.py GetFeed",
+      "status": "VERIFIED"
+    },
+    "connect_timeout_s": {
+      "value": 2.0,
+      "unit": "s, per socket connect and read",
+      "source": "chosen for connect-check so a missing robot fails fast",
+      "status": "SETTING"
+    },
+    "speed_factor_percent": {
+      "value": 20,
+      "unit": "% of max speed, sent as SpeedFactor(n); the safety gate allows at most 20",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): SpeedFactor(20) used for the demo (tested up to 40 %)",
+      "status": "VERIFIED"
+    },
+    "workspace_limits": {
+      "value": {"x_min_mm": null, "x_max_mm": null, "y_min_mm": null, "y_max_mm": null, "z_min_mm": null, "z_max_mm": null, "r_min_deg": null, "r_max_deg": null},
+      "unit": "mm and deg, robot base frame",
+      "source": "x/y/z limits not measured; Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): reach 175-370 mm from the robot axis, alarm 32 at 399.8 mm",
+      "status": "CONFIRM"
+    },
+    "vacuum_do": {
+      "value": 1,
+      "unit": "digital output index for DO(index, 0|1), range 1-24",
+      "source": "notebooks/week-03/Choton/code/config/settings.json robot.vacuum_do; suction tested on the real robot 12 Nov (Choton_Week3_Notebook.md, 2026-11-12, step 6); confirmed by the team 2026-11-16",
+      "status": "VERIFIED"
+    },
+    "blow_off_do": {
+      "value": 2,
+      "unit": "digital output index, pulsed after suction off to drop the object",
+      "source": "notebooks/week-03/Choton/code/config/settings.json robot.blow_do; tested on the real robot 12 Nov (Choton_Week3_Notebook.md, 2026-11-12, step 6)",
+      "status": "VERIFIED"
+    },
+    "blow_off_s": {
+      "value": 0.2,
+      "unit": "s, blow-off pulse length",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): confirmed (blow-off pulse 0.2 s)",
+      "status": "VERIFIED"
+    },
+    "vacuum_on_wait_s": {
+      "value": 0.6,
+      "unit": "s, wait after suction on before lifting",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): confirmed (suction on, wait 0.6 s before lifting)",
+      "status": "VERIFIED"
+    },
+    "vacuum_off_wait_s": {
+      "value": 0.3,
+      "unit": "s, wait after release before lifting",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): confirmed (suction off, blow, wait 0.3 s)",
+      "status": "VERIFIED"
+    },
+    "arm_orientation_code": {
+      "value": 0,
+      "unit": "SetArmOrientation(code); 0 = Left arm",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): SetArmOrientation(0) = Left after EnableRobot(), tested 12 Nov; a MovJ without it flipped the arm to Right (12 Nov)",
+      "status": "VERIFIED"
+    },
+    "object_conveyor_do": {
+      "value": 3,
+      "unit": "digital output index; 1 = object conveyor (belt A) runs, 0 = stops",
+      "source": "notebooks/week-03/Choton/code/config/settings.json robot.belt_do = 3, belt_on = 1 (DO3 -> relay -> Arduino Nano -> object conveyor); team confirmed Choton's belt set-up 2026-11-16",
+      "status": "VERIFIED"
+    },
+    "pick_z_by_type_mm": {
+      "value": {"card": 62.3, "candy": 71.8},
+      "unit": "mm, pick height per item type (item names starting with the key)",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py); the same values are in his code/config/settings.json, not yet committed",
+      "status": "VERIFIED"
+    },
+    "target_home": {
+      "value": {"x_mm": 197.6, "y_mm": 302.4, "z_mm": 189.7, "r_deg": -117.6},
+      "unit": "mm and deg, robot base frame",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): home X Y Z, out of the camera view. R = his pick angle -117.6, which his home() uses (it ignores the taught home R -36.9); the robot's feedback at home on 17 Nov read x 197.66, y 302.38, z 189.69, r -117.48",
+      "status": "VERIFIED"
+    },
+    "target_pick_approach": {
+      "value": {"x_mm": 217.94, "y_mm": 45.38, "z_mm": 174.1, "r_deg": -117.6},
+      "unit": "mm and deg, robot base frame",
+      "source": "ASSUMED X Y: calibration cross 5 (middle of the pick area) of Choton's 17 Nov calibration; in real runs X Y come from the camera for each object. Z = travel height 174.1 (hose limit), R = pick angle -117.6 (Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py))",
+      "status": "ASSUMED"
+    },
+    "target_pick": {
+      "value": {"x_mm": 217.94, "y_mm": 45.38, "z_mm": 62.3, "r_deg": -117.6},
+      "unit": "mm and deg, robot base frame; Z is replaced per item by pick_z_by_type_mm",
+      "source": "ASSUMED X Y: calibration cross 5 (middle of the pick area) of Choton's 17 Nov calibration; in real runs X Y come from the camera for each object. Z = card pick height 62.3, R = pick angle -117.6 (Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py))",
+      "status": "ASSUMED"
+    },
+    "target_place_approach": {
+      "value": {"x_mm": 369.8, "y_mm": 27.9, "z_mm": 174.1, "r_deg": -117.6},
+      "unit": "mm and deg, robot base frame",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): above the box at the travel height 174.1 mm; the same values are in his code/config/settings.json, not yet committed",
+      "status": "VERIFIED"
+    },
+    "target_place_box": {
+      "value": {"x_mm": 369.8, "y_mm": 27.9, "z_mm": 135.4, "r_deg": -117.6},
+      "unit": "mm and deg, robot base frame",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): middle of the box, 371 mm from the axis; the same values are in his code/config/settings.json, not yet committed",
+      "status": "VERIFIED"
+    },
+    "target_lid_approach": {
+      "value": null,
+      "unit": "mm and deg, robot base frame; above the lid, carry height",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): lid X Y come from the camera (class lid); carry height 174.1; R not given",
+      "status": "CONFIRM"
+    },
+    "target_lid": {
+      "value": null,
+      "unit": "mm and deg, robot base frame; lid pick pose",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): lid pick height 86.3 mm, X Y from the camera; R not given",
+      "status": "CONFIRM"
+    },
+    "target_lid_box_approach": {
+      "value": null,
+      "unit": "mm and deg, robot base frame; above the box with the lid, over the box edge",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): above the box (369.8, 27.9) at 174.1 mm; R not given",
+      "status": "CONFIRM"
+    },
+    "target_lid_on_box": {
+      "value": null,
+      "unit": "mm and deg, robot base frame; lid put on the box",
+      "source": "Choton's handover, lab 17 Nov (new worktable and camera stand, 15_robot_setup.py): lid close at (369.8, 27.9), height 105.1 mm; R not given",
+      "status": "CONFIRM"
+    },
+    "teacher_approval": {
+      "value": null,
+      "unit": "text: teacher name and date of the approval for real-robot runs",
+      "source": "CLAUDE.md integration rules: real-robot mode needs a teacher-approval flag",
+      "status": "CONFIRM"
+    }
+  }
+}
