@@ -1,5 +1,5 @@
 {
-  "_comment": "SIMULATION, assumed parameters. Every time and distance below is a placeholder. Replace it with a measured value and change its note. Cycle as in notebooks/week-03/Choton/Choton_Week3_Notebook.md (team-confirmed 2026-11-16).",
+  "_comment": "SIMULATION, assumed parameters. Every time and distance below is a placeholder. Replace it with a measured value and change its note. Cycle as in Choton's week 3 notebook (team-confirmed 2026-11-16).",
   "items_per_box": {
     "value": ["card", "candy", "candy"],
     "unit": "item types, in placing order",

@@ -27,7 +27,7 @@ DOBOT_DRY_BANNER = (
 
 
 class RealMotionNotImplemented(RuntimeError):
-    """The safety gate passed, but the real-robot motion path is not written yet (CLAUDE.md)."""
+    """The safety gate passed, but the real-robot motion path is not written yet (project rules)."""
 
 
 @dataclass
@@ -118,5 +118,5 @@ def setup_dobot_real(hardware_path: str | Path | None = None, teacher_approved: 
     require_real_robot_allowed(dobot_section(load_hardware_raw(hardware_path)), teacher_approved)
     raise RealMotionNotImplemented(
         "the safety gate passed, but the real-robot motion path is not implemented yet. "
-        "Ask for it in a message that also says the teacher approved it (CLAUDE.md)."
+        "Ask for it in a message that also says the teacher approved it (project rules)."
     )

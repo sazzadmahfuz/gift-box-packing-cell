@@ -3,7 +3,7 @@
 Only DOExecute(channel, off level) is sent: DO3 (belt stop level) and DO16 (enable off) for the
 object belt, DO1 and DO2 (suction, blow-off) for the gripper. No motion, no enabling, no robot
 e-stop: the arm is not touched. This is the one exception to "outputs only through the gate"
-(decided by Sazzad, 17 Nov; CLAUDE.md). A level that is not confirmed is not used: its off level
+(decided by Sazzad, 17 Nov; project rules). A level that is not confirmed is not used: its off level
 could be the run level. The box belt cannot be stopped from here (see BOX_BELT_NOTE).
 """
 

@@ -66,7 +66,7 @@
     "robot_ip": {
       "value": "192.168.1.6",
       "unit": "IPv4 address (Ethernet 1 / LAN1)",
-      "source": "notebooks/week-02/Rashmika/Readme.md (ping OK); notebooks/week-02/Rashmika/Images/day1/Image4.png, Image7.jpg",
+      "source": "Rashmika's week 2 notebook (ping OK); a photo in Rashmika's week 2 notebook, Image7.jpg",
       "status": "VERIFIED"
     },
     "dashboard_port": {
@@ -108,13 +108,13 @@
     "vacuum_do": {
       "value": 1,
       "unit": "digital output index for DO(index, 0|1), range 1-24",
-      "source": "notebooks/week-03/Choton/code/config/settings.json robot.vacuum_do; suction tested on the real robot 12 Nov (Choton_Week3_Notebook.md, 2026-11-12, step 6); confirmed by the team 2026-11-16",
+      "source": "vision/config/settings.json robot.vacuum_do; suction tested on the real robot 12 Nov (Choton_Week3_Notebook.md, 2026-11-12, step 6); confirmed by the team 2026-11-16",
       "status": "VERIFIED"
     },
     "blow_off_do": {
       "value": 2,
       "unit": "digital output index, pulsed after suction off to drop the object",
-      "source": "notebooks/week-03/Choton/code/config/settings.json robot.blow_do; tested on the real robot 12 Nov (Choton_Week3_Notebook.md, 2026-11-12, step 6)",
+      "source": "vision/config/settings.json robot.blow_do; tested on the real robot 12 Nov (Choton_Week3_Notebook.md, 2026-11-12, step 6)",
       "status": "VERIFIED"
     },
     "blow_off_s": {
@@ -144,7 +144,7 @@
     "object_conveyor_do": {
       "value": 3,
       "unit": "digital output index; 1 = object conveyor (belt A) runs, 0 = stops",
-      "source": "notebooks/week-03/Choton/code/config/settings.json robot.belt_do = 3, belt_on = 1 (DO3 -> relay -> Arduino Nano -> object conveyor); team confirmed Choton's belt set-up 2026-11-16",
+      "source": "vision/config/settings.json robot.belt_do = 3, belt_on = 1 (DO3 -> relay -> Arduino Nano -> object conveyor); team confirmed Choton's belt set-up 2026-11-16",
       "status": "VERIFIED"
     },
     "pick_z_by_type_mm": {
@@ -210,7 +210,7 @@
     "teacher_approval": {
       "value": null,
       "unit": "text: teacher name and date of the approval for real-robot runs",
-      "source": "CLAUDE.md integration rules: real-robot mode needs a teacher-approval flag",
+      "source": "project integration rules: real-robot mode needs a teacher-approval flag",
       "status": "CONFIRM"
     }
   }

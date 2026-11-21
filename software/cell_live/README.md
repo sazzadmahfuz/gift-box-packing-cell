@@ -26,7 +26,7 @@ One box, as the cell is built (17 Nov):
   `ultralytics` (vision model), `pyserial` (box belt controller, only if it is ever connected).
   Install all with `python -m pip install -r requirements.txt` (about 1.5 GB; do it before the lab).
   A missing package shows `FAIL` with the install command.
-- Choton's code, model and calibration in `notebooks/week-03/Choton/code` (loaded by path, never changed).
+- Choton's code, model and calibration in `vision` (loaded by path, never changed).
 - Laptop Ethernet on a fixed 192.168.1.x address (not .6, the robot), cable in the robot's LAN1.
 - Close DobotStudio Pro and Choton's scripts: the robot keeps only one client on port 29999.
 
@@ -80,7 +80,7 @@ screen: a save needs a new status and source, keeps `live_config.json.bak`, and 
 
 ## The cell as built (17 Nov)
 Sources: photos of the station, Rashmika's notebook and sketch
-(`notebooks/week-03/Rashmika/ArduinoCode/ArduinoCode.ino`), the handwritten DO list, Choton's handover.
+(`hardware/box_belt_arduino/ArduinoCode.ino`), the handwritten DO list, Choton's handover.
 Always say "object belt" and "box belt": Rashmika's belt A is the box belt.
 
 | Part | Wiring | Levels (`live_config.json`) |

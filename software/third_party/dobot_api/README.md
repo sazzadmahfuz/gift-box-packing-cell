@@ -1,7 +1,7 @@
 # dobot_api (vendor copy, unmodified)
 
 - **What:** `dobot_api.py` from Dobot's TCP-IP-4Axis-Python demo, MIT licence (`LICENSE`, "Copyright (c) 2022 Dobot").
-- **Copied from:** `notebooks/week-02/Rashmika/Project files/TCP-IP-4Axis-Python-main/dobot_api.py`
+- **Copied from:** Dobot TCP-IP-4Axis-Python, `dobot_api.py` (as downloaded by the team in week 2)
   (last changed in commit `4388701`), byte for byte (SHA-256 checked on 2026-11-12).
 - **Do not edit.** It is an unmodified vendor file, so it is exempt from the 300-line rule. Keeping
   it unmodified means the command strings are exactly the ones Dobot's own code builds.

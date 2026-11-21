@@ -2,7 +2,7 @@
 
 dobot_api.DobotApi accepts only the real port numbers, so the fake servers use them too; tests
 skip if another program already holds a port. Reply texts are test data, shaped like the replies
-in notebooks/week-02/Rashmika/Images/day2/Image2.png.
+in a photo in Rashmika's week 2 notebook.
 """
 
 from __future__ import annotations

@@ -10,7 +10,6 @@ PLAN_WORDS = re.compile(r"\bparts? ?[1-5]\b|guide" + r"line|\bstages? [a-d]\b", 
 
 
 def _files():
-    yield SOFTWARE.parent / "CLAUDE.md"
     for folder in CHECKED:
         yield from (path for path in folder.rglob("*") if path.suffix in SUFFIXES and "__pycache__" not in path.parts)
 

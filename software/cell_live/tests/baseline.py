@@ -12,7 +12,7 @@ from cell_live.live_config import LiveConfig, load_live_config
 CALIBRATION_12_NOV = Path(__file__).parent / "data" / "homography_2026-11-12.json"  # Choton's 12 Nov file (copy)
 BEFORE_LAB = ("dobot.teacher_approval", "dobot.belt_on_value", "dobot.belt_dir_forward_value", "dobot.belt_enable_on_value",
               "control.box_wait_timeout_s", "control.box_leave_timeout_s", "dobot.feedback_readable_while_held")
-CHOTON_12_NOV = {  # notebooks/week-03/Choton/code/config/settings.json robot section as committed on 12 Nov
+CHOTON_12_NOV = {  # vision/config/settings.json robot section as committed on 12 Nov
     "home": [291.5, 151.0, 135.7, -13.5], "travel_z": 104.7, "pick_z": 63.7, "place_z": 131.7, "r_angle": -73.8,
     "box_slots": [[369.6, 17.1]], "pick_z_by_type": {"card": 63.7, "candy": 72.1}, "min_radius_mm": 150, "belt_on": 1,
 }

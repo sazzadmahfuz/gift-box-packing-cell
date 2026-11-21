@@ -10,7 +10,7 @@ from cell_live.status import NOT_OBSERVABLE
 from cell_live.tests.fakes import FakeCapture, fake_cv2
 
 CONFIG = load_live_config()
-SKETCH = "notebooks/week-03/Rashmika/ArduinoCode/ArduinoCode.ino"
+SKETCH = "hardware/box_belt_arduino/ArduinoCode.ino"
 REPO = Path(__file__).resolve().parents[3]
 
 

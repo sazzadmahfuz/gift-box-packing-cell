@@ -1,6 +1,6 @@
 """Belt A (objects) switched by a robot output: DO3 -> relay -> Arduino Nano -> conveyor motor.
 
-Source: notebooks/week-03/Choton/code/config/settings.json (belt_do = 3, belt_on = 1) and the
+Source: vision/config/settings.json (belt_do = 3, belt_on = 1) and the
 team's confirmation on 2026-11-16. The robot driver sends the output; an optional inner belt
 (the simulated belt) keeps the simulated world moving in dry runs.
 """

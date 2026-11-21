@@ -4,7 +4,7 @@
 
 ## What it does
 A discrete-event simulation of the gift-box packing cell, following the team's working set-up
-(`notebooks/week-03/Choton/Choton_Week3_Notebook.md`, confirmed 2026-11-16):
+(Choton's week 3 notebook, confirmed 2026-11-16):
 1. Belt B (boxes, run by the Arduino Nano) brings a box until the Nano's sensor S1 stops it, and
    the camera sees the open box.
 2. The robot switches belt A (objects) on with DO3. Belt A runs until the camera has seen the full
@@ -107,7 +107,7 @@ The commands come from Dobot's own `dobot_api.py`, copied unmodified to
 **`--mode dobot-dry`: SIMULATION, assumed parameters.** The cell runs as in sim mode with the
 times from `config.json`. Every robot command is printed exactly as it would go to port 29999
 (dashboard) or 30003 (moves), with the speed ratio and the target values. Nothing is sent, and no
-socket is opened. It follows Choton's real-robot program (`notebooks/week-03/Choton/code/robot_lib.py`):
+socket is opened. It follows Choton's real-robot program (`vision/robot_lib.py`):
 - `SetArmOrientation(0)` (Left) at start.
 - Every move is `MovL`, because a `MovJ` flipped the arm on 12 Nov.
 - Pick height per item type.

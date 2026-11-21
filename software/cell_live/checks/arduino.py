@@ -2,7 +2,7 @@
 
 Since 17 Nov the UNO is not connected to this PC: it runs the box belt on its own E18-D80NK
 sensor and is powered from a USB-C supply. Rashmika's sketch
-(notebooks/week-03/Rashmika/ArduinoCode/ArduinoCode.ino) sends nothing over USB. Without a configured port this check reports
+(hardware/box_belt_arduino/ArduinoCode.ino) sends nothing over USB. Without a configured port this check reports
 NOT_OBSERVABLE with that reason, and without a status command it only checks that the port opens.
 """
 
