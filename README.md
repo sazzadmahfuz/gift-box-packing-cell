@@ -120,7 +120,7 @@ The YOLO training images (about 50 MB) are not in this repository.
 |---|---|---|
 | Rashmika Ruwanpathirana | [@Rashmika-Dineth](https://github.com/Rashmika-Dineth) | Hardware: robot tests, belt wiring and drivers, box belt Arduino, enclosure design |
 | Enamul Choton | [@enamulhqdk](https://github.com/enamulhqdk) | Vision: OpenCV, YOLO dataset and training, camera-to-robot calibration, taught points |
-| Sazzad Ibna Mahfuz | [@sazzadmahfuz](https://github.com/sazzadmahfuz) | Software: system architecture, simulation (RoboDK), cell control software, safety gate, operator console, real cell runs |
+| Sazzad Ibna Mahfuz | [@sazzadmahfuz](https://github.com/sazzadmahfuz) | Integration and software: integrated the robot, conveyors, camera and vision into one working cell; system architecture, simulation (RoboDK), cell control software, safety gate, operator console, real cell runs |
 
 Supervisor: Leo Li, HAMK.
 
