@@ -63,7 +63,7 @@ The vision code, the YOLO model (`vision/models/best.pt`, YOLO11n trained on 147
 ```powershell
 cd software
 python -m pip install -r requirements.txt
-python -m pytest -q              # 549 tests, fake robot and camera, no hardware needed
+python -m pytest -q              # fake robot and camera, no hardware needed
 python -m cell_sim               # offline simulation
 python -m cell_live              # device checks + console (real cell only)
 ```
@@ -81,7 +81,6 @@ Real cell, 17–18 Nov 2026. All runs are in `testing/live_runs/`:
 | Fastest box | 64.4 s at 100 % speed, no pauses |
 | Camera-to-robot calibration | 0.92 mm mean error, 5 marks |
 | YOLO model, validation set | precision 0.99, recall 1.00, mAP50 0.99, mAP50-95 0.89 |
-| Software tests | 549 passed |
 
 Note: run 195652 reached the end of the log at 98.7 s but is not counted, because the lid step picked the filled box instead of the lid.
 
